@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "GenSenB";
+  src: url("../fonts/GenSenRounded-B.woff2");
+}
+@font-face {
+  font-family: "GenSenM";
+  src: url("../fonts/GenSenRounded-M.woff2");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.first {
+  font-family: "GenSenB", sans-serif;
+}
+
+html body img {
+  position: relative;
+  bottom: 1rem;
+}
+
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+html body {
+  font-family: "GenSenM", sans-serif;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(../imgs1x/start.png);
+  background-repeat: no-repeat;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+html body div.btn {
+  cursor: pointer;
+  position: relative;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #d54a3d, #dfd9ac);
+  box-shadow: 0 0.25rem 0.25rem rgba(213, 74, 61, 0.84);
+  width: 7.6rem;
+  height: 3rem;
+  border-radius: 2rem;
+}
+html body div.btn div {
+  pointer-events: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-size: 100% auto;
+  }
+  body img {
+    width: 100vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 500px) {
+  body {
+    background-size: auto 100vh;
+  }
+  body img {
+    width: auto;
+    height: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
